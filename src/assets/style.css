@@ -1,0 +1,69 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width:1324px;
+}
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: absolute;
+    right: 52px;
+    top:0px;
+    z-index: 100;
+    float: right;
+    overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.red-avatar-uploader .el-upload {
+    border-color: #F56C6C;
+}
+.avatar-uploader-icon {
+    font-size: 22px;
+    color: #C0C4CC;
+    width: 90px;
+    height: 134px;
+    line-height: 134px;
+    text-align: center;
+}
+.avatar {
+    width: 90px;
+    height: 134px;
+    display: block;
+}
+.exist-avatar{
+    width: 90px;
+    height: 134px;
+    position: absolute;
+    top:0px;
+    z-index: 1000;
+    cursor: not-allowed;
+    display: block;
+    background: #F5F7FA;
+    opacity: 0.3;
+}
+.el-upload__tip{
+    color: #C0C4CC;
+    position: absolute;
+    z-index: 99;
+    right: 62px;
+    top: 100px;
+}
+
+
+
+/*element-ui*/
+.el-menu-item, .el-submenu__title, .el-form-item__label, .el-row, .el-progress__text{
+    font-size: 13px !important;
+}
+.el-menu-item, .el-submenu__title, .el-submenu .el-menu-item{
+    height: 50px;
+    line-height: 50px;
+}
