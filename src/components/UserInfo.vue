@@ -58,7 +58,6 @@
  *                                                          provname,cityname,schoolname)
  */
 import rest from '@/service/rest'
-import { mapMutations } from 'vuex'
 
 let vm = new Object({
     props: {
@@ -94,8 +93,6 @@ let vm = new Object({
         }
     },
     methods:{
-        ...mapMutations(["startloading","closeloading"]),
-
         provQuery(){
             rest.service.provinceQuery().then(res => {
                 this.area.provnames = res.msg;

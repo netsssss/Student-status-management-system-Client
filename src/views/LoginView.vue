@@ -12,6 +12,7 @@
 <script>
 import LoginForm from '../components/LoginForm';
 import rest from '../service/rest';
+import { mapMutations } from 'vuex'
 
 
 let vm = new Object({
@@ -20,7 +21,12 @@ let vm = new Object({
             onloading: false,
         }
     },
+    created(){
+        this.closeloading();
+    },
     methods: {
+        ...mapMutations(["startloading","closeloading"]),
+
         login(username,password){
             this.onloading = true;
             rest.service.login(username, password).then(res =>{
