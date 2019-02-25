@@ -2,6 +2,8 @@
 
 ## http://47.94.159.148:8088/
 
+### 用户名 admin 密码 1
+
 # stuc
 
 > A Vue.js project
